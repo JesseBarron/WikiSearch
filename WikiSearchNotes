@@ -1,0 +1,34 @@
+Notes for the wikiSearch challenge!!!
+--------------------------------------------------------------------------------
+
+Day 1.5 1-6-2017 -- 12:50pm-
+--->Note when adding the script tags in the html document, be sure to put the actual .js document
+under all the libraries because its dependent on the libraries to actually function...
+
+wikipedia Random : https://en.wikipedia.org/wiki/Special:Random
+wikipedia call: https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json
+                                                  action = opensearch & format = json & search = what+ever+here & limit= 15 & profile = normal
+action: What you want to pull(in our case opensearch)
+format: XML/Json/ we of course are using json
+search: this uses the + symbol in place of a space....
+limit: this limits the search to 15 results.
+profile: ...? no clue normal seems approprate though...
+
+
+What have I learned?
+  I'm getting better at positioning different elements in html but i still need major practice
+i learned that all that padding does is bulk up elements, margin actually separates them like I did
+with the <li> elements.
+  max-width comes in real handy when it comes to organizing a list into a background-color.
+
+  Things to improve/learn for the next time
+
+  * Learn how to stretch a background-color to fit all the elements on top of it
+  *Start putting together some javascript to test out the page...
+  try to script code so it'll make <li> elements based on the number of items it recieved..
+
+  I guess that's it... try learning how to get the input from the search bar before anything...
+and then test out the concept before you try to make the website look pretty....
+  *I like the idea of having a relatively blank page before you show results, it makes it look a lot
+better than having a blank page waiting for a user response.....Transformations?...Transitions?...
+maybe simple ones....

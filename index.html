@@ -2,20 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="wikisearch.css" media="screen" title="wikisearch.css">
-    <title>Wiki-Search Project</title>
-    <script> type="javascript" src = "wikisearch.js"</script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "wikisearch.js"></script>
   </head>
 
   <body>
-    <div id = "navbar" class="">
-      <h1></h1>
+    <div id = "navbar" class="navbar">
+      <div id = "search_input" class="">
+        <form class="inputs" action="index.html" method="post">
+          <input type="text" name="wikisearch" placeholder="WikiSearch" autocomplete="off">
+          <input type="submit" name="Search" value="Search!">
+        </form>
+      </div>
     </div>
 
     <div id = "brown_bkg" class="light_brnbkg">
 
-      <div id = "link_list" class="">
+      <div id = "link_list" class="list">
 
         <ul>
           <li id = "li_1"> <img id = "limg_1" src=""  alt=""> <p id = "lip_1">p1</p> </li>
@@ -23,11 +31,13 @@
           <li id = "li_3"> <img id = "limg_3" src=""  alt=""> <p id = "lip_3">p3</p> </li>
           <li id = "li_4"> <img id = "limg_4" src=""  alt=""> <p id = "lip_4">p4</p> </li>
           <li id = "li_5"> <img id = "limg_5" src=""  alt=""> <p id = "lip_5">p5</p> </li>
+          
         </ul>
 
-      </div>
 
+      </div>
     </div>
+
 
   </body>
 </html>

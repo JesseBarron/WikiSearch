@@ -1,6 +1,44 @@
  body{
    background-color: #deaa87;
  }
- .ligh_brnbkg{
-   background-color: 
+ .light_brnbkg{
+   position: absolute;
+   background-color: white;
+   z-index: 2;
+   margin-top: 210px;
+   left: 29%;
+   height: 100%;
+   width: 600px;
+
+
  }
+ .navbar{
+   position: fixed;
+   z-index: 10;
+   height:200px;
+   width: 100%;
+   background-color: rgba(17,105,159,.737);
+
+ }
+ .inputs{
+   position: relative;
+   z-index: 30;
+   left: 40%;
+   top: 88px;
+   opacity: 1;
+}
+.list{
+  position: relative;
+  z-index: 22;
+  top:  90px;
+
+}
+li{
+  padding: 25px;
+  max-width:  97%;
+  margin-bottom: 30px;
+  display: block;
+  border-style: solid;
+  border-width: medium;
+  border-color: #8bcaf2;
+}
