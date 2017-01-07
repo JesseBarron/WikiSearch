@@ -32,3 +32,18 @@ and then test out the concept before you try to make the website look pretty....
   *I like the idea of having a relatively blank page before you show results, it makes it look a lot
 better than having a blank page waiting for a user response.....Transformations?...Transitions?...
 maybe simple ones....
+
+1-7-17
+----------------------------------------------------------
+  I set up the keyup event so when the user presses enter on the
+text input field it'll just return the value of whats in that field.
+  ill be able to use that value in the API so i can search for whatever
+the user typed.
+
+  The way i made that key up function work was instead of
+using the click event in the actual text input i used it on the
+submit button, which is in the same form so if that is clicked
+it's like the text input was clicked... So in theory it should
+give the same result.
+  return false; prevents the page from reloading after the click
+event is triggered.....
