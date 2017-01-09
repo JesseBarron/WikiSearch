@@ -4,11 +4,13 @@
  .light_brnbkg{
    position: absolute;
    background-color: white;
+   background-size: contain;
    z-index: 2;
    margin-top: 210px;
    left: 29%;
-   height: 100%;
+   /*height: 100%;*/
    width: 600px;
+   padding-bottom: 50px;
 
 
  }
@@ -30,7 +32,7 @@
 .list{
   position: relative;
   z-index: 22;
-  top:  90px;
+  top:  60px;
 
 }
 li{

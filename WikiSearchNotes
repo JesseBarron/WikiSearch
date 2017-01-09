@@ -47,3 +47,28 @@ it's like the text input was clicked... So in theory it should
 give the same result.
   return false; prevents the page from reloading after the click
 event is triggered.....
+1-9-2017
+--------------------------------------------------------
+  ok so i made the website functional today after some rigorous thinking and
+testing. The part that took me the longest to code was the actual function..
+Figuring out which loop should loop how many times was a thinker but it didn't take
+too long.
+  embarrassingly enough the part that took most of my time was adding the html
+from the jquery to the actual page. It wasn't that i was using the wrong method
+or jquery tool. It was because the results were hidden under some scaffolding <li> elements.
+It took me half an hour to figure out what i probably accomplished the first try.
+That coupled with correcting simple syntax and logic errors i think ive spent a bad hour
+chasing my own tail....
+  Besides that I'm happy how the functionality worked. I even added a break in the
+loops in case the wiki articles run out before 10!! It was a simple implementation
+to the already written code and it felt soooo satisfying seeing it work so smoothly
+on the first couple of tries too!!
+    I think i deserve a gold star for my efforts today. I guess allowing myself
+some time to blow up pirate spaceships and make a profit through trade!
+
+- - - - What i need to do tomorrow to finish up the page.
+    -- Find a way to clear the page after when the user wants to search another query
+    -- Add a random button on the page somewhere
+    -- That should fufil the requirements for the project
+    --If you're feeling bored you could try to add some transitions and transform
+animations to make it look pretty. YOU NEED A LOT OF PRACTICE IN THAT REGARD!!
