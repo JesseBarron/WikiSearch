@@ -17,16 +17,20 @@
  .navbar{
    position: fixed;
    z-index: 10;
-   height: 200px; /*height transition to 200px*/
+   height: 100%; /*height transition to 200px*/
    width: 100%;
    background-color: rgb(232,178,131); /*tansition to rgba(26,225,102,.737)*/
-
+   transition: height 1s, background-color 2s;
+ }
+ #wiki_header{
+   position: relative;
+   left: 45%;
  }
  .inputs{
    position: relative;
    z-index: 30;
    left: 40%;
-   top: 88px;
+   top: 5px;
    opacity: 1;
 }
 #text_input{
