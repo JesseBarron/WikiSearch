@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+var clickCounter = 0;
+$("buton[name=Random]").click(function(){
+  
+});
 $("#text_input").keyup(function(e){
     var key = e.which; // .which is the key pressed e is the key pressed by the user
     //hence why its the function's argument....
@@ -15,6 +18,7 @@ $("#text_input").keyup(function(e){
 $("input[name=Search]").click(function(){ //This triggers the search button in the same forum as the text input
   // I'm guessing because they're both inside the same forum, clicking on the search button is the same as pressing
   //enter on the keyboard...
+  clickCounter++;
   var input = $("#text_input").val()//this is how I obtained the value fom the text field. simple
   var input = input.split(" ");// Split the string array
   var input = input.join("+");// put it back together in order to fit the criteria for the API to function.
@@ -33,7 +37,9 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
     success: function(data){
       var wikiObj = data;
       //$("ul").html(data[1][0]+"<br>"+data[2][0]);
-
+      if(clickCounter > 1){
+        $(".list").empty();
+      }
       function jsonParse(json){
         var length = data.length;
         var title;
@@ -41,7 +47,7 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
         var hyper;
         var i = 1;
         var x = 0;
-        for (var y = 1; y < 9; y++){//controls the first box in the matrix
+        for (var y = 1; y < 10; y++){
           while(i < 3){
             title = data[i][x];
             i ++;
@@ -49,9 +55,11 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
             i ++;
             hyper = data[i][x];
             i++;
-            if(title == null) { var stop = false; break; }
-            $(".list").append('<a href ='+hyper+'>'+"<li><h2>"+title+"</h2><br><p>"+preface+"</p></br>"+
-            "</li></a>");
+            if(title == null) { var stop = false; break;}
+              $(".list").append('<a target = "_blank" href ='+hyper+'>'+"<li><h2>"+title+"</h2><br><p>"+preface+"</p></br>"+
+              "</li></a>");
+
+
           }
           if(stop){ break; }
           console.log(hyper);
@@ -71,6 +79,8 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
 
 //Api related stuff goes up here^^^^ hopefully....
 //  console.log(input);
+
+  console.log(clickCounter);
   return false;
   });
 });

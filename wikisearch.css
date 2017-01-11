@@ -17,9 +17,9 @@
  .navbar{
    position: fixed;
    z-index: 10;
-   height:200px;
+   height:100%;
    width: 100%;
-   background-color: rgba(17,105,159,.737);
+   background-color: rgb(17,105,159);
 
  }
  .inputs{
@@ -29,6 +29,11 @@
    top: 88px;
    opacity: 1;
 }
+#text_input{
+ font-size: 20px;
+ font-family:
+}
+
 .list{
   position: relative;
   z-index: 22;
