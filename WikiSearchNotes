@@ -72,3 +72,9 @@ some time to blow up pirate spaceships and make a profit through trade!
     -- That should fufil the requirements for the project
     --If you're feeling bored you could try to add some transitions and transform
 animations to make it look pretty. YOU NEED A LOT OF PRACTICE IN THAT REGARD!!
+1-10-17
+---------------------------------------------------------------------------
+  Before I forget! I learned know to correct something that gave me trouble in the past.
+the way to neutralize the parent elements' properties. Is to specify child element with an id or class and set the property at CSS!
+if you wanna naturalize a property that is activated when :hover you have to specify it on the child
+element too. See CSS line 54 and 60.    

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 var clickCounter = 0;
 $("buton[name=Random]").click(function(){
-  
+
 });
 $("#text_input").keyup(function(e){
     var key = e.which; // .which is the key pressed e is the key pressed by the user
@@ -55,9 +55,9 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
             i ++;
             hyper = data[i][x];
             i++;
-            if(title == null) { var stop = false; break;}
-              $(".list").append('<a target = "_blank" href ='+hyper+'>'+"<li><h2>"+title+"</h2><br><p>"+preface+"</p></br>"+
-              "</li></a>");
+            if(title == null) { ;var stop = false; break;}
+              $(".list").append("<div class = 'borders'><li class='li_class'><a class ='li_class' target = '_blank' href ="+hyper+"><h2>"+title+"</h2></a><br><p class='li_class'>"+preface+"</p></br>"+
+              "</li></div>");
 
 
           }
@@ -69,6 +69,7 @@ $("input[name=Search]").click(function(){ //This triggers the search button in t
           x++;
 
           }
+          $(".list").append('<h3>No more results</h3>')
         }
         jsonParse(data);
     }

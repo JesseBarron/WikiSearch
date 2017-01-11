@@ -1,14 +1,14 @@
  body{
-   background-color: #deaa87;
+   background-color: #ddf7bd;
  }
  .light_brnbkg{
    position: absolute;
-   background-color: white;
+   background-color: ;
    background-size: contain;
    z-index: 2;
    margin-top: 210px;
-   left: 29%;
-   /*height: 100%;*/
+   left: 35%;
+   height: auto;
    width: 600px;
    padding-bottom: 50px;
 
@@ -17,9 +17,9 @@
  .navbar{
    position: fixed;
    z-index: 10;
-   height:100%;
+   height: 200px; /*height transition to 200px*/
    width: 100%;
-   background-color: rgb(17,105,159);
+   background-color: rgb(232,178,131); /*tansition to rgba(26,225,102,.737)*/
 
  }
  .inputs{
@@ -41,11 +41,27 @@
 
 }
 li{
+  background-color: white;
   padding: 25px;
   max-width:  97%;
   margin-bottom: 30px;
   display: block;
-  border-style: solid;
-  border-width: medium;
-  border-color: #8bcaf2;
+  border-top: 5px solid rgb(92,167,250);
+  border-bottom: 5px solid rgb(92,167,250);
+  transition: border-left, border-right, .5s;
+
+
+}
+.borders :hover{
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 10px solid rgb(98,247,189);
+  border-right: 10px solid rgb(98,247,189);
+}
+.li_class :hover{
+  border-style: none;
+}
+h3{
+  text-align: center;
+  padding-bottom: 30px;
 }
