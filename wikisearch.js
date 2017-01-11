@@ -18,7 +18,9 @@ $("#text_input").keyup(function(e){
 $("input[name=Search]").click(function(){ //This triggers the search button in the same forum as the text input
   // I'm guessing because they're both inside the same forum, clicking on the search button is the same as pressing
   //enter on the keyboard...
-  $("#navbar").css({"height":"200px", "background-color" : "rgba(26,225,102,.737)"})
+  $("#navbar").css({"height":"200px", "background-color" : "rgba(26,225,102,.737)", "box-shadow" : "5px 5px 5px rgba(0,0,0,.232)"});
+  $(".inputs").css({"transform" : "matrix(1,0,0,1,0,0)"});
+  $("#wiki_header").css({"color" : "white"});
   clickCounter++;
   var input = $("#text_input").val()//this is how I obtained the value fom the text field. simple
   var input = input.split(" ");// Split the string array
